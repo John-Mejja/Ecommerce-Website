@@ -1,0 +1,42 @@
+.logo-container {
+    background: linear-gradient(135deg, #ee7474, #0000ff); /* Red to blue gradient */
+    color: #ffffff; /* White text for contrast */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border to distinguish */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    text-align: center;
+    font-weight: bold;
+  }
+
+.nav-link {
+    font-size: 1.1rem; /* Slightly increase font size for modern appearance */
+    font-weight: 600; /* Semi-bold for a strong, stylish look */
+    color: #000000; /* White text */
+    text-transform: uppercase; /* Modern uppercase style */
+    transition: color 0.3s; /* Smooth transitions for hover */
+    padding: 0.5rem 1rem; /* Comfortable padding */
+    border-radius: 8px; /* Rounded corners for a modern touch */
+  }
+  
+.link-normal {
+    font-size: 1.1rem; /* Slightly increase font size for modern appearance */
+    font-weight: 600; /* Semi-bold for a strong, stylish look */
+    color: #000000; /* White text */
+    padding: 0.5rem 1rem; /* Comfortable padding */
+    border-radius: 8px; 
+}
+
+.link-login {
+    font-size: 1.1rem; /* Slightly increase font size for modern appearance */
+    font-weight: 600; /* Semi-bold for a strong, stylish look */
+    color: #4400ff; /* White text */
+    padding: 0.5rem 1rem; /* Comfortable padding */
+    border-radius: 8px; 
+}
+
+.link-logout {
+    font-size: 1.1rem; /* Slightly increase font size for modern appearance */
+    font-weight: 600; /* Semi-bold for a strong, stylish look */
+    color: #ff0000; /* White text */
+    padding: 0.5rem 1rem; /* Comfortable padding */
+    border-radius: 8px; 
+}

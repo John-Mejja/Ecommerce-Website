@@ -1,0 +1,32 @@
+services:
+  database:
+    image: "postgres:latest"
+    ports:
+      - "5431:5432"
+    environment:
+      - "POSTGRES_USER=codecake"
+      - "POSTGRES_PASSWORD=codecake"
+      - "POSTGRES_DB=codecake"
+      
+    volumes:
+      - data:/var/lib/postgresql/data
+
+  # pg-admin:
+  #   image: dpage/pgadmin4
+
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=admin@gmail.com
+  #     - PGADMIN_DEFAULT_PASSWORD=admin
+  #     - PGADMIN_LISTEN_PORT=5050
+
+  #   ports:
+  #     - "5050:5050"
+
+volumes:
+  data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: C:\Users\mejah\Documents\Projects\Docker\volumes\ecommerce\postgres
+
