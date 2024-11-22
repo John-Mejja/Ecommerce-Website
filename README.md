@@ -1,101 +1,151 @@
-# Ecommerce
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+# 🛒 E-Commerce Website
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+A modern, fully-functional e-commerce platform showcasing a seamless shopping experience, built with **Angular**, **Tailwind CSS**, and **DaisyUI** for the frontend, and powered by **Spring Boot** and **PostgreSQL** on the backend.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+This project demonstrates advanced full-stack development skills, user authentication with **Kinde Auth**, and secure payments using **Stripe**.
 
-## Run tasks
+---
 
-To run the dev server for your app, use:
+## 🚀 Live Demo
 
-```sh
-npx nx serve ecom-frontend
+- **YouTube Demo Video**: [Watch Here](https://www.youtube.com/watch?v=GeHtXE93yKM)
+
+---
+
+## 📸 Screenshots
+
+| Home Page                              | Product List                            |
+|----------------------------------------|-----------------------------------------|
+| ![Home Page](screenshots/Home.png) | ![Product List](screenshots/Product-List.png) |
+
+| Product Details                        | Checkout                                |
+|----------------------------------------|-----------------------------------------|
+| ![Product Details](screenshots/Product-Details.png)  | ![Checkout](screenshots/Checkout.png) |
+
+---
+
+## 🛠️ Features
+
+- **User Authentication**: Single Sign-On (SSO) with Kinde, providing secure and seamless access.
+- **Product Management**: Comprehensive product and category handling.
+- **Shopping Cart**: Add, update, or remove items with real-time updates.
+- **Stripe Payments**: Fully integrated, secure payment gateway.
+- **Responsive Design**: Mobile-first design with Tailwind CSS and DaisyUI for modern UI/UX.
+- **Order Management**: Dynamic updates based on successful payments.
+
+---
+
+## 🔧 Tech Stack
+
+### **Frontend**
+- Angular 18
+- Tailwind CSS
+- DaisyUI
+
+### **Backend**
+- Spring Boot 3
+- PostgreSQL
+- Stripe API for payments
+
+### **Authentication**
+- Kinde SSO (OAuth2)
+
+---
+
+## 📚 Installation Guide
+
+### **Prerequisites**
+- Node.js and npm
+- Angular CLI
+- Java (JDK 21+)
+- PostgreSQL
+- Docker
+
+### **Setup**
+
+#### 1. Clone the repository
+```bash
+git clone https://github.com/John-Mejja/Ecommerce-Website.git
+cd Ecommerce-Website
 ```
 
-To create a production bundle:
+#### 2. Backend Setup
+- Navigate to the backend directory:
+  ```bash
+  cd apps/ecom-backend
+  ```
+- Configure `application.properties`:
+  - Set up PostgreSQL database credentials.
+  - Add your Kinde Auth and Stripe API keys.
+- Build and run the backend:
+  ```bash
+  ./mvnw spring-boot:run
+  ```
 
-```sh
-npx nx build ecom-frontend
-```
+#### 3. Frontend Setup
+- Navigate to the frontend directory:
+  ```bash
+  cd apps/ecom-frontend
+  ```
+- Install dependencies:
+  ```bash
+  npm install
+  ```
+- Start the application:
+  ```bash
+  ng serve
+  ```
 
-To see all available targets to run for a project, run:
+#### 4. Access the application
+- Visit `http://localhost:4200` in your browser.
 
-```sh
-npx nx show project ecom-frontend
-```
+---
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+## 💳 Kinde Auth Configuration
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+To enable authentication:
+1. Set up a Kinde Auth account at [Kinde Auth](https://kinde.com/).
+2. Set up user authentication for frontend and backend application.
+3. Generate and set your API keys in the backend `application.properties` file.
+4. Generate and set your API keys in the frontend 'environment.ts' file.
+5. Test the integration.
 
-## Add new projects
+---
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+## 💳 Stripe Configuration
 
-Use the plugin's generator to create new projects.
+To enable Stripe payments:
+1. Set up a Stripe account at [Stripe](https://stripe.com).
+2. Generate and set your API keys in the backend `application.properties`.
+3. Test the integration using Stripe's test cards.
 
-To generate a new application, use:
+---
 
-```sh
-npx nx g @nx/angular:app demo
-```
+## 📼 Video Demonstration
 
-To generate a new library, use:
+- Watch the project in action on YouTube: [https://www.youtube.com/watch?v=GeHtXE93yKM](https://www.youtube.com/watch?v=GeHtXE93yKM)
 
-```sh
-npx nx g @nx/angular:lib mylib
-```
+---
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+## 🔍 Learn More
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### Terminologies Used:
+- [Angular](https://angular.dev/)
+- [Tailwind CSS](https://tailwindcss.com/docs/guides/angular)
+- [DaisyUI](https://daisyui.com/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [PostgreSQL](https://www.postgresql.org)
+- [Kinde Auth](https://kinde.com/)
+- [Stripe API](https://dashboard.stripe.com/login)
 
-## Set up CI!
+---
 
-### Step 1
+## 👥 Contributors
 
-To connect to Nx Cloud, run the following command:
+- **[John Major](https://github.com/John-Mejja)**  
+  *Full-Stack Developer*
 
-```sh
-npx nx connect
-```
+---
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
 
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
-```
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
