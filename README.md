@@ -1,3 +1,4 @@
+
 # 🛒 E-Commerce Website
 
 A modern, fully-functional e-commerce platform showcasing a seamless shopping experience, built with **Angular**, **Tailwind CSS**, and **DaisyUI** for the frontend, and powered by **Spring Boot** and **PostgreSQL** on the backend.
@@ -16,11 +17,11 @@ This project demonstrates advanced full-stack development skills, user authentic
 
 | Home Page                              | Product List                            |
 |----------------------------------------|-----------------------------------------|
-| *(Insert screenshot of the home page)* | *(Insert screenshot of the product list page)* |
+| ![Home Page](screenshots/Home.png) | ![Product List](screenshots/Product-List.png) |
 
 | Product Details                        | Checkout                                |
 |----------------------------------------|-----------------------------------------|
-| *(Insert screenshot of product page)*  | *(Insert screenshot of checkout page)* |
+| ![Product Details](screenshots/Product-Details.png)  | ![Checkout](screenshots/Checkout.png) |
 
 ---
 
